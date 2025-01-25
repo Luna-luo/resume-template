@@ -2,12 +2,12 @@
   "contactInfo": [
     {
       "title": "Email",
-      "value": "luojinxuice@gmail.com",
+      "value": "aaa",
       "logo": "/email.svg"
     },
     {
       "title": "Phone",
-      "value": "+447724310483",
+      "value": "123",
       "logo": "/phone.svg"
     },
     {
@@ -21,28 +21,26 @@
       "logo": "/linkedin.svg"
     }
   ],
-  "introduction": "Full-stack developer with <b>4 years</b> of experience building scalable web applications using <b>React, Node.js, and TypeScript</b>. Passionate about creating exceptional user experiences, solving complex problems, and contributing to the success of innovative fintech products. Skilled in collaborating with cross-functional teams and delivering robust, scalable solutions.",
+  "introduction": "abc...",
   "workExperience": [
     {
       "title": "Front-End Developer",
-      "company": "Linklogis",
+      "company": "A company",
       "location": "Shenzhen, China",
       "date": "09/2020 - 05/2024",
       "description": [
-        "<b>Technical Lead:</b>Spearheaded the creation of a paperless trade platform, integrating <b>React.js and Web3 APIs</b> to ensure tamper-proof records, securing a <b>20M CNY </b>grant from the Shenzhen Government.",
-        "<b>Product Architect: </b>Designed and implemented a <b>3D NFT</b> platform from scratch using React and Golang, serving over <b>1,000 clients</b> with a<b> 96%</b> satisfaction rate.",
-        "<b>Legacy System Modernization:</b> Migrated a legacy system to a <b>Vue 3-based</b> architecture, improving load times by <b>30%</b> and enhancing stability.",
-        "<b>AI Integration:</b> Developed an intelligent <b>Q&A chatbot leveraging the ChatGPT API</b>, implemented real-time streaming to enhance user interactions, and scaled the system to support multiple departments, increasing overall productivity.",
-        "<b>Leadership:</b> Promoted from Junior to Mid-Level Developer within one year; mentored two junior developers, standardized coding practices, and introduced a <b>Vue template scaffolding</b> tool, reducing project setup time by 50%.",
-        "<b>AWS Experience:</b> Deployed containerized applications using <b>AWS ECS</b> and managed image repositories with <b>AWS ECR</b>, ensuring efficient deployment pipelines. Used AWS <b>S3</b> for basic storage needs, such as handling static assets.",
-        "<b>Patents:</b> Earned 4 national patents for technological innovations, including the integration of WebAssembly for automated signature verification."
+        "<b>Technical Lead:</b>abdecf...",
+        "<b>Product Architect: </b>abdecf...",
+        "aaaaa",
+        "bbbbb",
+        "ccccc"
       ]
     }
   ],
   "education": [
     {
       "degree": "Master of Financial Management",
-      "school": "Australian National University",
+      "school": "AAA National University",
       "location": "Canberra, Australia",
       "date": "07/2018 - 07/2019",
       "coursesAndInfo": [
@@ -52,7 +50,7 @@
     },
     {
       "degree": "Bachelor of Finance",
-      "school": "Dalian Finance and Economics College",
+      "school": "ABC College",
       "location": "Dalian, China",
       "date": "09/2014 - 07/2018",
       "coursesAndInfo": [
@@ -65,11 +63,11 @@
   "skills": [
     {
       "title": "Frontend",
-      "value": "React, Vue, TypeScript, Three.js, Jest, Cypress"
+      "value": "abc, def, ghi, jkl"
     },
     {
       "title": "Backend",
-      "value": "Node.js, Next.js, Express, PostgreSQL, RESTful & GraphQL APIs, JWT, Golang"
+      "value": "Node.js, Go, Solidity"
     },
     {
       "title": "DevOps",
@@ -85,47 +83,26 @@
       "title": "Cloud IDE",
       "technologies": "React, TypeScript, Node.js, AWS",
       "description": [
-        "Worked with a cross-functional team to design and implement scalable full-stack applications using <b>Node.js and React.</b>",
-        "Enhanced functionality by integrating <b>preset plugins</b> for intelligent code completion, folding, and debugging.",
-        "Automated deployment pipelines on <b>AWS</b> using <b>CI/CD (GitHub Actions)</b> and <b>Docker</b>, enabling seamless scalability."
+        "Worked with aaa...",
+        "Enhanced bbb...",
+        "Automated ccc..."
       ]
     },
     {
-      "title": "Linklogis Robot",
+      "title": "ABD Robot",
       "technologies": "Node.js, Vue.js, ChatGPT API",
       "description": [
-        "Developed an intelligent chatbot leveraging <b>ChatGPT's API</b> to provide accurate and context-aware responses for internal use.",
-        "Implemented <b>real-time streaming</b> output for a seamless user experience during extended interactions.",
-        "Enhanced productivity with a widely-used internal tool, supporting multiple departments across the company."
+        "AAA,,,"
       ]
     },
     {
-      "title": "NFT Platform",
-      "technologies": "React, TypeScript, Go, Solidity",
+      "title": "CCCC",
+      "technologies": "abd",
       "description": [
-        "Designed and implemented a <b>3D NFT</b> platform for the company's anniversary, supporting the minting and transfer of digital assets.",
-        "Contributed to backend development in <b>Golang</b>, offering robust querying capabilities.",
-        "Deployed smart contracts on the blockchain using <b>Solidity</b>, adhering to the ERC-721 standard to securely issue and manage NFTs."
+        "Designed abc,,,",
+        "Contributed BBB..."
       ]
-    },
-    {
-      "title": "Asset-Backed Tokenization Platform",
-      "technologies": "Vue, Typescript, React Native",
-      "description": [
-         "Designed and implemented a blockchain platform enabling financial asset digitization and trading in secondary markets.",
-        "Built front-end interfaces with <b>Vue.js and TypeScript</b>, integrating blockchain data via Web3.js.",
-         "Customized<b>React Native</b> wallets to facilitate blockchain interactions, and developed <b>smart contracts</b> to enable asset tokenization."
-         ]
-    },
-    {
-          "title": "Cross-Border Paperless Trade Platform",
-          "technologies": "React, Solidity, Web3.js",
-          "description": [
-            "Developed a blockchain-based platform for digitizing cross-border trade documents, ensuring tamper-proof records and transparency.",
-            "Designed a renderer using <b>React</b> for seamless user interaction and integrated with Web3.js for blockchain operations.",
-            "Integrated Tradetrust and OpenAttestation libraries and utilized <b>smart contract</b> calls to enable secure wrapping, signing, and verification processes."
-          ]
-      }
+    }
   ]
 }
 
