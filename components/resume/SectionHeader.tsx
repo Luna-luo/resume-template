@@ -46,6 +46,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({title}) => {
               flex-direction: column;
           }
       .wrapper {
+          margin-top: 8px;
           padding-left: 36px;
           width: auto;
       }

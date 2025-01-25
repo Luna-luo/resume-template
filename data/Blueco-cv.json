@@ -1,0 +1,111 @@
+{
+  "contactInfo": [
+    {
+      "title": "Email",
+      "value": "luojinxuice@gmail.com",
+      "logo": "/email.svg"
+    },
+    {
+      "title": "Phone",
+      "value": "+447724310483",
+        "logo": "/phone.svg"
+    },
+    {
+      "title": "Location",
+      "value": "London, United Kingdom",
+        "logo": "/location.svg"
+    },
+    {
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/luojinxu",
+        "logo": "/linkedin.svg"
+    }
+  ],
+  "introduction": "Full-stack developer with <b>4 years</b> of experience building scalable web applications using <b>React, Node.js, and TypeScript</b>. Passionate about integrating AI-driven solutions and enhancing user experience through innovative technologies. Proven track record in collaborating with cross-functional teams to develop seamless, high-performance platforms. Experienced in building and optimizing AI-powered tools, such as intelligent chatbots using<b> ChatGPT API</b>, and leveraging cloud technologies for scalable solutions.",
+  "workExperience": [
+    {
+          "title": "Front-End Developer",
+          "company": "Linklogis",
+          "location": "Shenzhen, China",
+          "date": "09/2020 - 05/2024",
+          "description": [
+            "<b>Greenfield Development: </b>Designed and implemented a <b>3D NFT</b> platform from scratch using React and Golang, serving over <b>1,000 clients</b> with a<b> 96%</b> satisfaction rate.",
+            "<b>Legacy System Modernization:</b> Migrated a legacy system to a <b>Vue 3-based</b> architecture, improving load times by <b>30%</b> and enhancing stability.",
+            "<b>AI Integration:</b> Developed an intelligent <b>Q&A chatbot leveraging the ChatGPT API</b>, implemented real-time streaming to enhance user interactions, and scaled the system to support multiple departments, increasing overall productivity.",
+            "<b>Leadership:</b> Promoted from Junior to Mid-Level Developer within one year; mentored two junior developers, standardized coding practices, and introduced a <b>Vue template scaffolding</b> tool, reducing project setup time by 50%.",
+            "<b>AWS Experience:</b> Deployed containerized applications using <b>AWS ECS</b> and managed image repositories with <b>AWS ECR</b>, ensuring efficient deployment pipelines. Used AWS <b>S3</b> for basic storage needs, such as handling static assets."
+          ]
+      }
+  ],
+    "education": [
+        {
+        "degree": "Master of Financial Management",
+        "school": "Australian National University",
+        "location": "Canberra, Australia",
+        "date": "07/2018 - 07/2019",
+        "coursesAndInfo": [
+            "GPA:<b> 5.5/7.0</b>",
+            "Key Courses: Applied Investments, Data Analysis, Risk Management"
+        ]
+        },
+        {
+        "degree": "Bachelor of Finance",
+        "school": "Dalian Finance and Economics College",
+        "location": "Dalian, China",
+        "date": "09/2014 - 07/2018",
+        "coursesAndInfo": [
+            "GPA:<b> 3.5/4.0</b>",
+            "Key Courses: Database basics, Mathematics and Algorithms, Financial Engineering",
+            "<b>National Scholarship</b> (Ranked first in majors)"
+        ]
+        }
+    ],
+    "skills": [
+         {
+            "title": "Frontend",
+            "value": "React, Vue, TypeScript, Three.js, Jest, Cypress"
+          },
+          {
+            "title": "Backend",
+            "value": "Node.js, Next.js, Express, PostgreSQL, RESTful & GraphQL APIs, JWT, Golang"
+          },
+          {
+            "title": "DevOps",
+            "value": "AWS (Lambda, ECR, ECS), Docker, CI/CD (GitHub Actions)"
+          },
+          {
+            "title": "AI & Tools",
+            "value": "ChatGPT API, AI chatbot development, real-time streaming"
+          }
+    ],
+    "projects": [
+                  {
+                    "title": "Cloud IDE",
+                    "technologies": "React, TypeScript, Node.js, AWS",
+                    "description": [
+                      "Worked with a cross-functional team to design and implement scalable full-stack applications using <b>Node.js and React.</b>",
+                      "Enhanced functionality by integrating <b>preset plugins</b> for intelligent code completion, folding, and debugging.",
+                      "Automated deployment pipelines on <b>AWS</b> using <b>CI/CD (GitHub Actions)</b> and <b>Docker</b>, enabling seamless scalability."
+                    ]
+                  },
+                  {
+                    "title": "Linklogis Robot",
+                    "technologies": "Node.js, Vue.js, ChatGPT API",
+                    "description": [
+                      "Developed an intelligent chatbot leveraging <b>ChatGPT's API</b> to provide accurate and context-aware responses for internal use.",
+                      "Implemented <b>real-time streaming</b> output for a seamless user experience during extended interactions.",
+                      "Enhanced productivity with a widely-used internal tool, supporting multiple departments across the company."
+                    ]
+                  },
+                  {
+                    "title": "NFT Platform",
+                    "technologies": "React, TypeScript, Go, Solidity",
+                    "description": [
+                      "Designed and implemented a <b>3D NFT</b> platform for the company's anniversary, supporting the minting and transfer of digital assets.",
+                      "Contributed to backend development in <b>Golang</b>, offering robust querying capabilities.",
+                      "Deployed smart contracts on the blockchain using <b>Solidity</b>, adhering to the ERC-721 standard to securely issue and manage NFTs."
+                    ]
+                  }
+              ]
+
+}

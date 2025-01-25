@@ -1,0 +1,114 @@
+{
+  "clContentInfo": [
+    {
+      "title": "Email",
+      "value": "luojinxuice@gmail.com",
+      "logo": "/email.svg"
+    },
+    {
+      "title": "Phone",
+      "value": "+447724310483",
+      "logo": "/phone.svg"
+    },
+    {
+      "title": "Location",
+      "value": "London, United Kingdom",
+      "logo": "/location.svg"
+    },
+    {
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/luojinxu",
+      "logo": "/linkedin.svg"
+    }
+  ],
+  "introduction": "I am writing to express my interest in the Senior Fullstack Node.js Engineer (React) position at Sainsbury’s Tech. With four years of experience building scalable, high-performance applications using React, Node.js, and TypeScript, I am excited about the opportunity to contribute my skills to Sainsbury’s innovative engineering team.",
+  "applicant": {
+    "name": "Jinxu Luo",
+    "title": "Full-Stack Developer",
+    "email": "luojinxuice@gmail.com",
+    "phone": "+447724310483",
+    "location": "London"
+  },
+  "recipient": {
+    "name": "Hiring Manager",
+    "company": "Sainsbury’s Tech",
+    "date": "2025-01-20"
+  },
+  "projects": [
+          {
+              "title": "Cloud IDE",
+              "description": "Built an online cloud IDE platform using React, TypeScript, and Node.js, integrating intelligent plugins for real-time code completion and debugging while deploying the system on AWS for scalability, streamlining CI/CD pipelines."
+          },
+          {
+              "title": "3D NFT Platform",
+              "description": "Designed and deployed a platform with React and Golang, serving over 1,000 clients with a 96% satisfaction rate."
+          },
+          {
+              "title": "AI chatbot",
+              "description": "Deployed a Q&A chatbot leveraging the ChatGPT API, using Node.js and Vue.js, implementing streaming output and seamless API integration, which has since become an essential productivity tool for the company."
+          }
+      ],
+  "skills": "I am particularly drawn to Sainsbury’s focus on customer-centric solutions and its commitment to leveraging cutting-edge technologies like AI and cloud infrastructure. The opportunity to work on a high-impact team driving Sainsbury’s loyalty and rewards programs resonates deeply with my professional aspirations. My hands-on experience with agile methodologies, including Scrum and pair programming, aligns with your collaborative and iterative approach to product development.",
+  "missionStatement": "I am eager to bring my technical skills, problem-solving mindset, and passion for innovation to Sainsbury’s Tech. I am confident that my experience aligns well with your needs, and I would welcome the opportunity to discuss how I can contribute to your team’s success.",
+  "closing": "Thank you for considering my application. I would welcome the opportunity to discuss how I can contribute to your team.",
+  "contactInfo": [
+    {
+      "title": "Email",
+      "value": "luojinxuice@gmail.com",
+      "logo": "/email.svg"
+    },
+    {
+      "title": "Phone",
+      "value": "+447724310483",
+      "logo": "/phone.svg"
+    },
+    {
+      "title": "Location",
+      "value": "London, United Kingdom",
+      "logo": "/location.svg"
+    },
+    {
+      "title": "LinkedIn",
+      "value": "linkedin.com/in/luojinxu",
+      "logo": "/linkedin.svg"
+    }
+  ],
+  "workExperience": [
+    {
+      "title": "Front-End Developer",
+      "company": "Linklogis",
+      "location": "Shenzhen, China",
+      "date": "09/2020 - 05/2024",
+      "description": [
+        "<b>Greenfield Development: </b>Designed and implemented a <b>3D NFT</b> platform from scratch using React and Golang, serving over <b>1,000 clients</b> with a<b> 96%</b> satisfaction rate.",
+        "<b>Legacy System Modernization:</b> Migrated a legacy system to a <b>Vue 3-based</b> architecture, improving load times by <b>30%</b> and enhancing stability.",
+        "<b>AI Integration:</b> Developed an intelligent <b>Q&A chatbot leveraging the ChatGPT API</b>, implemented real-time streaming to enhance user interactions, and scaled the system to support multiple departments, increasing overall productivity.",
+        "<b>Leadership:</b> Promoted from Junior to Mid-Level Developer within one year; mentored two junior developers, standardized coding practices, and introduced a <b>Vue template scaffolding</b> tool, reducing project setup time by 50%.",
+        "<b>AWS Experience:</b> Deployed containerized applications using <b>AWS Lambda and  ECS</b> and managed image repositories with <b>AWS ECR</b>, ensuring efficient deployment pipelines. Used AWS <b>S3</b> for basic storage needs, such as handling static assets."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Financial Management",
+      "school": "Australian National University",
+      "location": "Canberra, Australia",
+      "date": "07/2018 - 07/2019",
+      "coursesAndInfo": [
+        "GPA:<b> 5.5/7.0</b>",
+        "Key Courses: Applied Investments, Data Analysis, Risk Management"
+      ]
+    },
+    {
+      "degree": "Bachelor of Finance",
+      "school": "Dalian Finance and Economics College",
+      "location": "Dalian, China",
+      "date": "09/2014 - 07/2018",
+      "coursesAndInfo": [
+        "GPA:<b> 3.5/4.0</b>",
+        "Key Courses: Database basics, Mathematics and Algorithms, Financial Engineering",
+        "<b>National Scholarship</b> (Ranked first in majors)"
+      ]
+    }
+  ]
+}
