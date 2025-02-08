@@ -1,15 +1,14 @@
 import { PropsWithChildren } from 'react';
 
-interface SectionContentProps {}
 
-const SectionContent: React.FC<PropsWithChildren<SectionContentProps>> = ({ children }) => {
+const SectionContent: React.FC<PropsWithChildren<object>> = ({ children }) => {
   return (
     <>
-    <div className="section-content text-gray-700">
-      <div className="w">
-        {children}
+      <div className="section-content text-gray-700">
+        <div className="w">
+          {children}
+        </div>
       </div>
-    </div>
       <style jsx>{`
           .section-content {
               display: flex;
@@ -17,13 +16,13 @@ const SectionContent: React.FC<PropsWithChildren<SectionContentProps>> = ({ chil
               justify-content: center;
           }
           .w {
-              width: 95%;
-              padding-left: 26px;
+              width: 100%;
+              padding-left: 44px;
               position: relative;
           }
 
       `}</style>
-      </>
+    </>
   );
 }
 

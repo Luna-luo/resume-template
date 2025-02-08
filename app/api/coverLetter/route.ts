@@ -1,9 +1,12 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import path from 'path';
 import fs from 'fs';
-import {NextResponse} from 'next/server';
+import {NextRequest, NextResponse} from 'next/server';
 
-export async function GET(request: Request, {params}: {params: {company: string}}) {
-  const { company } = await params;
+export async function GET(
+  request: NextRequest
+) {
+  const company = request.nextUrl.searchParams.get('company');
 
   // 构建 JSON 文件路径
   const filePath = path.join(process.cwd(), 'data', `${company}-cl.json`);
@@ -20,8 +23,8 @@ export async function GET(request: Request, {params}: {params: {company: string}
   return NextResponse.json(data);
 }
 
-export async function POST(request: Request, {params}: {params: {company: string}}) {
-  const {company} = await params;
+export async function POST(request: NextRequest) {
+  const company = request.nextUrl.searchParams.get('company');
 
   // 构建 JSON 文件路径
   const dataDir = path.join(process.cwd(), 'data'); // 指定 data 文件夹路径

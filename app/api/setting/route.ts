@@ -1,13 +1,13 @@
 import fs from 'fs';
 import path from 'path';
-import {NextResponse} from 'next/server';
+import {NextRequest, NextResponse} from 'next/server';
 
 
-export async function POST(request: Request, {params}: {params: {company: string}}) {
+export async function POST(request: NextRequest) {
   const { searchParams } = new URL(request.url); // 获取查询参数
   const action = searchParams.get('action'); // 获取 "action" 参数
 
-  const { company} = await params;
+  const company = request.nextUrl.searchParams.get('company');
   let filePath = '';
   if (action==='saveResume') {
     // 构建 JSON 文件路径

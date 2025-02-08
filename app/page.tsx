@@ -54,7 +54,7 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
           {
-            companies.length > 0 && companies.map ((company, index) => (
+            companies.length > 0 && companies.map ((company) => (
               <Card
                 key={company.id}
                 style={{width: 260}}

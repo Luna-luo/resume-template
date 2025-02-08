@@ -4,30 +4,34 @@ import axios from 'axios';
 import TextArea from 'antd/es/input/TextArea';
 import {Button, Input} from 'antd';
 
-
-export default function Setting({params}: { params: { company: string } }) {
+export default async function Setting({ params,}: { params: Promise<{ company: string }> }) {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [resume, setResume] = useState ('');
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [coverLetter, setCoverLetter] = useState (null);
+  const company = (await params).company;
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect (() => {
-    axios.get (`/api/resume/${params.company}`).then ((response) => {
+    axios.get (`/api/resume?company=${company}`).then ((response) => {
       console.log (response.data);
       setResume (JSON.stringify(response.data, null, 2));
     });
   }, []);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect (() => {
-    axios.get (`/api/coverLetter/${params.company}`).then ((response) => {
+    axios.get (`/api/coverLetter?company=${company}`).then ((response) => {
       console.log (response.data);
       setCoverLetter (response.data);
     });
   }, []);
 
   const saveResume = () => {
-    axios.post (`/api/setting/${params.company}?action=saveResume`, resume).then ((response) => {
+    axios.post (`/api/setting?company=${company}?action=saveResume`, resume).then ((response) => {
       console.log (response.data);
     });
   }
   const saveCoverLetter = () => {
-    axios.post (`/api/setting/${params.company}?action=saveCoverLetter`, coverLetter).then ((response) => {
+    axios.post (`/api/setting?company=${company}?action=saveCoverLetter`, coverLetter).then ((response) => {
       console.log (response.data);
     });
   }

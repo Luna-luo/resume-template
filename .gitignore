@@ -43,3 +43,6 @@ next-env.d.ts
 # idea configs
 resume-template.iml
 .idea/
+
+#data
+/data

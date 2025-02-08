@@ -39,11 +39,11 @@ export default function NewPage() {
     };
     console.log('Saving new company profile:', newProfile);
     // 这里可以添加保存逻辑，比如通过 API 发送到后端
-    axios.post(`/api/resume/${company}`, resume).then((res) => {
+    axios.post(`/api/resume?company=${company}`, resume).then((res) => {
       console.log(res.data);
       console.log('Resume saved');
     });
-    axios.post(`/api/coverLetter/${company}`, coverLetter).then((res) => {
+    axios.post(`/api/coverLetter?company=${company}`, coverLetter).then((res) => {
       console.log(res.data);
       console.log('Cover letter saved');
     });
