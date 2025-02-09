@@ -46,7 +46,7 @@ export function DownloadButton({ anchorClassName, fileName }: { anchorClassName:
       const blob = new Blob([response.data], { type: "application/pdf" });
       const link = document.createElement("a");
       link.href = URL.createObjectURL(blob);
-      link.download = fileName + ".pdf";
+      link.download = "Jinxu-" + fileName + ".pdf";
       link.click();
       URL.revokeObjectURL(link.href);
     } catch (error) {

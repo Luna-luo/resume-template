@@ -68,17 +68,26 @@ interface ResumeData {
 
 export default function ResumePage({ params, }: { params: Promise<{ company: string }> }) {
   const [resumeData, setResumeData] = useState<ResumeData | null>(null)
+  const [company, setCompany] = useState<string | null>(null);  // 用 useState 存储 company
 
   useEffect(() => {
+    const fetchCompany = async () => {
+      const { company } = await params;
+      setCompany(company);  // 获取并保存 company
+    };
+    fetchCompany();
+  }, [params]);
+
+  useEffect(() => {
+    if (!company) return
     const fetchData = async () => {
-      const company = (await params).company;
       axios.get(`/api/resume?company=${company}`).then((res) => {
         console.log('res.data', res.data);
         setResumeData(res.data);
       });
     };
     fetchData().then();
-  }, [params]);
+  }, [company]);
 
   if (!resumeData) {
     return <div>Loading...</div>;
@@ -196,7 +205,7 @@ export default function ResumePage({ params, }: { params: Promise<{ company: str
               </div>
             </div>
           </div>
-          <DownloadButton anchorClassName=".resume-content" fileName="Resume-A4.pdf" />
+          <DownloadButton anchorClassName=".resume-content" fileName={"Resume-" + company} />
         </CenterBox>
       </Wrapper>
       <style jsx>{`

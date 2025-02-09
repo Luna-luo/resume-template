@@ -21,9 +21,19 @@ export default function CoverLetter({ params, }: {
   params: Promise<{ company: string }>
 }) {
   const [clContent, setClContent] = useState<CoverLetterContent | null>(null);
+  const [company, setCompany] = useState<string | null>(null)
+
   useEffect(() => {
+    const fetchCompany = async () => {
+      const { company } = await params;
+      setCompany(company);  // 获取并保存 company
+    };
+    fetchCompany();
+  }, [params]);
+
+  useEffect(() => {
+    if (!company) return
     const fetchCoverLetter = async () => {
-      const company = (await params).company;
       axios.get(`/api/coverLetter?company=${company}`).then((res) => {
         console.log(res.data);
         setClContent(res.data);
@@ -96,7 +106,7 @@ export default function CoverLetter({ params, }: {
                 <p className="mt-4">{clContent.applicant.name}</p>
               </div>
             </div>
-            <DownloadButton anchorClassName=".letter-content" fileName="CoverLetter.pdf" />
+            <DownloadButton anchorClassName=".letter-content" fileName={"CoverLetter-" + company} />
           </div>
         </CenterBox>
       </Wrapper>
