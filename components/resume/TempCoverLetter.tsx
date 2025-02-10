@@ -5,22 +5,14 @@ import Image from 'next/image';
 import axios from 'axios';
 import { Wrapper } from '@/app/resume/[company]/page';
 import { CenterBox } from '@/app/resume/[company]/page';
+import { useAppSelector } from '@/lib/hooks';
 
-interface CoverLetterContent {
-  clContentInfo: { title: string, value: string, logo: string }[];
-  introduction: string;
-  applicant: { name: string, title: string, email: string, phone: string, location: string };
-  recipient: { name: string, company: string, date: string };
-  projects: { title: string, description: string }[];
-  skills: string;
-  missionStatement: string;
-  closing: string;
-}
 
-export default function CoverLetter({ params, }: {
+export default function TempCoverLetter({ params, }: {
   params: Promise<{ company: string }>
 }) {
-  const [clContent, setClContent] = useState<CoverLetterContent | null>(null);
+  // const [clContent, setClContent] = useState<CoverLetterContent | null>(null);
+  const clContent = useAppSelector((state) => state.coverLetter)
   const [company, setCompany] = useState<string | null>(null)
 
   useEffect(() => {
@@ -31,16 +23,6 @@ export default function CoverLetter({ params, }: {
     fetchCompany();
   }, [params]);
 
-  useEffect(() => {
-    if (!company) return
-    const fetchCoverLetter = async () => {
-      axios.get(`/api/coverLetter?company=${company}`).then((res) => {
-        console.log(res.data);
-        setClContent(res.data);
-      })
-    }
-    fetchCoverLetter().then();
-  }, [company]);
   if (!clContent) return (<div>Loading...</div>);
   return (
     <>
@@ -106,7 +88,7 @@ export default function CoverLetter({ params, }: {
                 <p className="mt-4">{clContent.applicant.name}</p>
               </div>
             </div>
-            {/* <DownloadButton anchorClassName=".letter-content" fileName={"CoverLetter-" + company} /> */}
+            <DownloadButton anchorClassName=".letter-content" fileName={"CoverLetter-" + company} />
           </div>
         </CenterBox>
       </Wrapper>

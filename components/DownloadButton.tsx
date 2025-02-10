@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import { Button } from "antd"
 
 export function DownloadButton({ anchorClassName, fileName }: { anchorClassName: string, fileName: string }) {
   const handleDownload = async () => {
@@ -55,12 +56,24 @@ export function DownloadButton({ anchorClassName, fileName }: { anchorClassName:
     }
   };
 
+  function transformName(name: string) {
+    if (name.toLowerCase().includes('resume')) {
+      return ' CV'
+    } else {
+      return ' CL'
+    }
+  }
+
+  // className = "fixed bottom-10 right-10 bg-blue-500 text-white p-3 rounded shadow-lg hover:bg-blue-600"
+
   return (
     <button
+      // type='primary'
+      className="fixed top-2 bg-blue-500 text-white p-3 rounded shadow-lg hover:bg-blue-600"
+      style={{ right: '-200px' }}
       onClick={handleDownload}
-      className="fixed bottom-10 right-10 bg-blue-500 text-white p-3 rounded shadow-lg hover:bg-blue-600"
     >
-      Download PDF
+      {'Download' + transformName(fileName)}
     </button>
   );
 }
